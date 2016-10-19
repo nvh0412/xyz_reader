@@ -8,5 +8,7 @@
     <string name="action_share">Share</string>
 
     <string name="up">Up</string>
+  <string name="drawer_open">open drawer</string>
+  <string name="drawer_close">close drawer</string>
 
 </resources>
