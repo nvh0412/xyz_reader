@@ -337,10 +337,10 @@
                     "file": "/Users/HoaNV/GitHub/udacity/android/xyzreader/XYZReader/src/main/res/values-sw600dp/dimens.xml",
                     "position": {
                         "startLine": 3,
-                        "startColumn": 4,
-                        "startOffset": 90,
-                        "endColumn": 52,
-                        "endOffset": 138
+                        "startColumn": 2,
+                        "startOffset": 84,
+                        "endColumn": 50,
+                        "endOffset": 132
                     }
                 }
             },
@@ -451,10 +451,10 @@
                     "file": "/Users/HoaNV/GitHub/udacity/android/xyzreader/XYZReader/src/main/res/values-sw600dp/dimens.xml",
                     "position": {
                         "startLine": 2,
-                        "startColumn": 4,
-                        "startOffset": 36,
-                        "endColumn": 53,
-                        "endOffset": 85
+                        "startColumn": 2,
+                        "startOffset": 32,
+                        "endColumn": 51,
+                        "endOffset": 81
                     }
                 }
             },
@@ -470,10 +470,10 @@
                     "file": "/Users/HoaNV/GitHub/udacity/android/xyzreader/XYZReader/src/main/res/values-sw600dp/dimens.xml",
                     "position": {
                         "startLine": 5,
-                        "startColumn": 4,
-                        "startOffset": 238,
-                        "endColumn": 41,
-                        "endOffset": 275
+                        "startColumn": 2,
+                        "startOffset": 228,
+                        "endColumn": 39,
+                        "endOffset": 265
                     }
                 }
             },
@@ -489,10 +489,10 @@
                     "file": "/Users/HoaNV/GitHub/udacity/android/xyzreader/XYZReader/src/main/res/values-sw600dp/dimens.xml",
                     "position": {
                         "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 143,
-                        "endColumn": 94,
-                        "endOffset": 233
+                        "startColumn": 2,
+                        "startOffset": 135,
+                        "endColumn": 92,
+                        "endOffset": 225
                     }
                 }
             },

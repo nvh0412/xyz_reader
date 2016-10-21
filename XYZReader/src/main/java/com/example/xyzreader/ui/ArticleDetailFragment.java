@@ -24,6 +24,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.ImageLoader;
 import com.example.xyzreader.R;
 import com.example.xyzreader.data.ArticleLoader;
+import com.squareup.picasso.Picasso;
 
 /**
  * A fragment representing a single Article detail screen. This fragment is
@@ -38,7 +39,6 @@ public class ArticleDetailFragment extends Fragment implements LoaderManager.Loa
   private Cursor mCursor;
   private long mItemId;
   private View mRootView;
-  private int mMutedColor = 0xFF333333;
 
   private ImageView mPhotoView;
   /**
@@ -84,7 +84,7 @@ public class ArticleDetailFragment extends Fragment implements LoaderManager.Loa
     mRootView = inflater.inflate(R.layout.fragment_article_detail, container, false);
     mPhotoView = (ImageView) getActivity().findViewById(R.id.photo);
 
-    mRootView.findViewById(R.id.share_fab).setOnClickListener(new View.OnClickListener() {
+    getActivity().findViewById(R.id.share_fab).setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
         startActivity(Intent.createChooser(ShareCompat.IntentBuilder.from(getActivity())
@@ -123,6 +123,7 @@ public class ArticleDetailFragment extends Fragment implements LoaderManager.Loa
           + mCursor.getString(ArticleLoader.Query.AUTHOR)
           + "</font>"));
       bodyView.setText(Html.fromHtml(mCursor.getString(ArticleLoader.Query.BODY)));
+      Picasso.with(getContext()).load(mCursor.getString(ArticleLoader.Query.PHOTO_URL)).into(mPhotoView);
       ImageLoaderHelper.getInstance(getActivity()).getImageLoader()
         .get(mCursor.getString(ArticleLoader.Query.PHOTO_URL), new ImageLoader.ImageListener() {
           @Override
@@ -130,10 +131,8 @@ public class ArticleDetailFragment extends Fragment implements LoaderManager.Loa
             Bitmap bitmap = imageContainer.getBitmap();
             if (bitmap != null) {
               Palette p = Palette.generate(bitmap, 12);
-              mMutedColor = p.getDarkMutedColor(0xFF333333);
-              mPhotoView.setImageBitmap(imageContainer.getBitmap());
               mRootView.findViewById(R.id.meta_bar)
-                .setBackgroundColor(mMutedColor);
+                .setBackgroundColor(p.getDarkMutedColor(0xFF333333));
             }
           }
 

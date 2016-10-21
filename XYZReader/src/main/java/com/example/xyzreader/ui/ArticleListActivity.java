@@ -8,7 +8,6 @@ import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v4.app.LoaderManager;
 import android.support.v4.content.Loader;
-import android.support.v4.widget.DrawerLayout;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
@@ -17,7 +16,6 @@ import android.support.v7.widget.Toolbar;
 import android.text.format.DateUtils;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ListView;
 import android.widget.TextView;
 
 import com.example.xyzreader.R;
@@ -37,9 +35,6 @@ public class ArticleListActivity extends AppCompatActivity implements
   private Toolbar mToolbar;
   private SwipeRefreshLayout mSwipeRefreshLayout;
   private RecyclerView mRecyclerView;
-  private String[] mReaderTitles;
-  private DrawerLayout mDrawerLayout;
-  private ListView mDrawerList;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -131,8 +126,7 @@ public class ArticleListActivity extends AppCompatActivity implements
       view.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-          startActivity(new Intent(Intent.ACTION_VIEW,
-            ItemsContract.Items.buildItemUri(getItemId(vh.getAdapterPosition()))));
+          startActivity(new Intent(Intent.ACTION_VIEW, ItemsContract.Items.buildItemUri(getItemId(vh.getAdapterPosition()))));
         }
       });
       return vh;

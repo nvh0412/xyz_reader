@@ -11,5 +11,6 @@
   <string name="drawer_open">open drawer</string>
   <string name="drawer_close">close drawer</string>
   <string name="detail_activity_title">Detail</string>
+  <string name="transition_photo">BackDropPhoto</string>
 
 </resources>

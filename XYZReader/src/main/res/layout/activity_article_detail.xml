@@ -18,8 +18,8 @@
       app:layout_scrollFlags="scroll|exitUntilCollapsed"
       android:fitsSystemWindows="true"
       app:contentScrim="@color/theme_primary"
-      app:expandedTitleMarginStart="48dp"
-      app:expandedTitleMarginEnd="64dp"
+      app:expandedTitleMarginStart="@dimen/list_toolbar_side_margin"
+      app:expandedTitleMarginEnd="@dimen/list_toolbar_side_margin"
       app:collapsedTitleTextAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"
       app:expandedTitleTextAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
 
@@ -29,7 +29,8 @@
         android:layout_height="0dp"
         android:fitsSystemWindows="true"
         android:scaleType="centerCrop"
-        app:layout_collapseMode="parallax"/>
+        app:layout_collapseMode="parallax"
+        android:transitionName="@string/transition_photo"/>
 
       <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
@@ -47,4 +48,14 @@
       android:layout_height="match_parent"
       app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
 
+  <android.support.design.widget.FloatingActionButton
+    android:id="@+id/share_fab"
+    android:layout_width="56dp"
+    android:layout_height="56dp"
+    android:layout_gravity="bottom|end"
+    android:layout_marginBottom="@dimen/fab_margin"
+    android:layout_marginEnd="@dimen/fab_margin"
+    android:layout_marginRight="@dimen/fab_margin"
+    android:contentDescription="@string/action_share"
+    android:src="@drawable/ic_share"/>
 </android.support.design.widget.CoordinatorLayout>

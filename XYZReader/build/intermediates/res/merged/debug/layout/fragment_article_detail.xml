@@ -34,12 +34,11 @@
             style="?android:attr/textAppearanceLarge"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-condensed"
+            android:fontFamily="sans-serif-medium"
             android:lineSpacingMultiplier="0.9"
             android:paddingBottom="@dimen/detail_metabar_title_bottom_padding"
             android:textColor="#fff"
-            android:textSize="@dimen/detail_title_text_size"
-            android:textStyle="bold"/>
+            android:textSize="@dimen/detail_title_text_size"/>
 
           <TextView
             android:id="@+id/article_byline"
@@ -63,16 +62,5 @@
           android:textSize="@dimen/detail_body_text_size"/>
       </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
-
-    <android.support.design.widget.FloatingActionButton
-      android:id="@+id/share_fab"
-      android:layout_width="56dp"
-      android:layout_height="56dp"
-      android:layout_gravity="bottom|end"
-      android:layout_marginBottom="@dimen/fab_margin"
-      android:layout_marginEnd="@dimen/fab_margin"
-      android:layout_marginRight="@dimen/fab_margin"
-      android:contentDescription="@string/action_share"
-      android:src="@drawable/ic_share"/>
   </FrameLayout>
 </android.support.v4.widget.NestedScrollView>

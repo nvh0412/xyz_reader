@@ -2,43 +2,37 @@
 <instant-run
     abi="x86"
     api-level="22"
-    density="420dpi"
+    density="xhdpi"
     format="7"
-    timestamp="145421007578041"
+    timestamp="150616632485058"
     token="8109909767595415634"
-    verifier="CLASS_ADDED" >
+    verifier="METHOD_DELETED" >
 
     <task
         name="javac"
-        duration="205" />
+        duration="677" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="41" />
+        duration="35" />
     <task
         name="verifier"
-        duration="1" />
+        duration="4" />
 
-    <artifact
-        location="/Users/HoaNV/GitHub/udacity/android/xyzreader/XYZReader/build/intermediates/res/resources-debug.ap_"
-        type="RESOURCES" />
     <artifact
         location="/Users/HoaNV/GitHub/udacity/android/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex"
         type="DEX" />
 
-    <build timestamp="144537226124210" >
+    <build timestamp="150536010169113" >
         <artifact
             location="/Users/HoaNV/GitHub/udacity/android/xyzreader/XYZReader/build/outputs/apk/XYZReader-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="145421007578041"
-        verifier="CLASS_ADDED" >
-        <artifact
-            location="/Users/HoaNV/GitHub/udacity/android/xyzreader/XYZReader/build/intermediates/res/resources-debug.ap_"
-            type="RESOURCES" />
+        timestamp="150616632485058"
+        verifier="METHOD_DELETED" >
         <artifact
             location="/Users/HoaNV/GitHub/udacity/android/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex"
             type="DEX" />
