@@ -56,12 +56,12 @@
         "source": "/Users/HoaNV/GitHub/udacity/android/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_expanded_menu_layout.xml"
     },
     {
-        "merged": "/Users/HoaNV/GitHub/udacity/android/xyzreader/XYZReader/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
-        "source": "/Users/HoaNV/GitHub/udacity/android/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_list_menu_item_radio.xml"
-    },
-    {
         "merged": "/Users/HoaNV/GitHub/udacity/android/xyzreader/XYZReader/build/intermediates/res/merged/debug/layout/abc_screen_simple.xml",
         "source": "/Users/HoaNV/GitHub/udacity/android/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_screen_simple.xml"
+    },
+    {
+        "merged": "/Users/HoaNV/GitHub/udacity/android/xyzreader/XYZReader/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
+        "source": "/Users/HoaNV/GitHub/udacity/android/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_list_menu_item_radio.xml"
     },
     {
         "merged": "/Users/HoaNV/GitHub/udacity/android/xyzreader/XYZReader/build/intermediates/res/merged/debug/layout/list_item_article.xml",
@@ -96,12 +96,12 @@
         "source": "/Users/HoaNV/GitHub/udacity/android/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/design/24.2.1/res/layout/design_navigation_menu.xml"
     },
     {
-        "merged": "/Users/HoaNV/GitHub/udacity/android/xyzreader/XYZReader/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
-        "source": "/Users/HoaNV/GitHub/udacity/android/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_action_bar_title_item.xml"
-    },
-    {
         "merged": "/Users/HoaNV/GitHub/udacity/android/xyzreader/XYZReader/build/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
         "source": "/Users/HoaNV/GitHub/udacity/android/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/Users/HoaNV/GitHub/udacity/android/xyzreader/XYZReader/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
+        "source": "/Users/HoaNV/GitHub/udacity/android/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_action_bar_title_item.xml"
     },
     {
         "merged": "/Users/HoaNV/GitHub/udacity/android/xyzreader/XYZReader/build/intermediates/res/merged/debug/layout/design_layout_snackbar_include.xml",
@@ -202,10 +202,6 @@
     {
         "merged": "/Users/HoaNV/GitHub/udacity/android/xyzreader/XYZReader/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
         "source": "/Users/HoaNV/GitHub/udacity/android/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/support_simple_spinner_dropdown_item.xml"
-    },
-    {
-        "merged": "/Users/HoaNV/GitHub/udacity/android/xyzreader/XYZReader/build/intermediates/res/merged/debug/layout/abc_simple_dropdown_hint.xml",
-        "source": "/Users/HoaNV/GitHub/udacity/android/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/layout/abc_simple_dropdown_hint.xml"
     },
     {
         "merged": "/Users/HoaNV/GitHub/udacity/android/xyzreader/XYZReader/build/intermediates/res/merged/debug/layout/notification_template_big_media_narrow.xml",

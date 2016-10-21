@@ -4,51 +4,44 @@
     api-level="22"
     density="420dpi"
     format="7"
-    timestamp="119892228910934"
-    token="8109909767595415634" >
+    timestamp="145421007578041"
+    token="8109909767595415634"
+    verifier="CLASS_ADDED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="205" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="41" />
     <task
         name="verifier"
-        duration="0" />
+        duration="1" />
 
     <artifact
         location="/Users/HoaNV/GitHub/udacity/android/xyzreader/XYZReader/build/intermediates/res/resources-debug.ap_"
         type="RESOURCES" />
+    <artifact
+        location="/Users/HoaNV/GitHub/udacity/android/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex"
+        type="DEX" />
 
-    <build timestamp="119134590089306" >
+    <build timestamp="144537226124210" >
         <artifact
             location="/Users/HoaNV/GitHub/udacity/android/xyzreader/XYZReader/build/outputs/apk/XYZReader-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="119764990567606"
-        verifier="R_CLASS_CHANGE" >
-        <artifact
-            location="/Users/HoaNV/GitHub/udacity/android/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/Users/HoaNV/GitHub/udacity/android/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/Users/HoaNV/GitHub/udacity/android/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/5/slice_0/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/Users/HoaNV/GitHub/udacity/android/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex"
-            type="DEX" />
-    </build>
-    <build timestamp="119892228910934" >
+        timestamp="145421007578041"
+        verifier="CLASS_ADDED" >
         <artifact
             location="/Users/HoaNV/GitHub/udacity/android/xyzreader/XYZReader/build/intermediates/res/resources-debug.ap_"
             type="RESOURCES" />
+        <artifact
+            location="/Users/HoaNV/GitHub/udacity/android/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex"
+            type="DEX" />
     </build>
 
 </instant-run>

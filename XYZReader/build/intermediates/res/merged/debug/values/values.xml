@@ -252,6 +252,7 @@
     <dimen name="design_tab_scrollable_min_width">72dp</dimen>
     <dimen name="design_tab_text_size">14sp</dimen>
     <dimen name="design_tab_text_size_2line">12sp</dimen>
+    <dimen name="detail_backdrop_height">256dp</dimen>
     <dimen name="detail_body_bottom_margin">88dp</dimen>
     <dimen name="detail_body_text_size">22sp</dimen>
     <dimen name="detail_body_top_margin">16dp</dimen>
@@ -338,6 +339,7 @@
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
+    <string name="detail_activity_title">Detail</string>
     <string name="drawer_close">close drawer</string>
     <string name="drawer_open">open drawer</string>
     <string name="search_menu_title">Search</string>
@@ -352,6 +354,8 @@
         <item name="android:windowEnterAnimation">@anim/design_bottom_sheet_slide_in</item>
         <item name="android:windowExitAnimation">@anim/design_bottom_sheet_slide_out</item>
     </style>
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+  </style>
     <style name="Base.AlertDialog.AppCompat" parent="android:Widget">
         <item name="android:layout">@layout/abc_alert_dialog_material</item>
         <item name="listLayout">@layout/abc_select_dialog_material</item>
@@ -1645,10 +1649,6 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
-    <style name="Theme.Bacon" parent="@style/Theme.AppCompat.Light.NoActionBar">
-  </style>
-    <style name="Theme.Bacon.Detail" parent="@style/Theme.AppCompat.Light.NoActionBar">
-  </style>
     <style name="Theme.Design" parent="Theme.AppCompat">
         <item name="textColorError">@color/design_textinput_error_color_dark</item>
     </style>

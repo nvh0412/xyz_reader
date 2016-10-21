@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+    <item name="android:colorAccent">@color/theme_accent</item>
+    <item name="android:colorPrimary">@color/theme_primary</item>
+    <item name="android:colorPrimaryDark">@color/theme_primary_dark</item>
+  </style>
     <style name="Base.TextAppearance.AppCompat" parent="android:TextAppearance.Material"/>
     <style name="Base.TextAppearance.AppCompat.Body1" parent="android:TextAppearance.Material.Body1"/>
     <style name="Base.TextAppearance.AppCompat.Body2" parent="android:TextAppearance.Material.Body2"/>
@@ -251,11 +256,6 @@
     </style>
     <style name="Platform.ThemeOverlay.AppCompat.Dark"/>
     <style name="Platform.ThemeOverlay.AppCompat.Light"/>
-    <style name="Theme.Bacon" parent="@style/Theme.AppCompat.Light.NoActionBar">
-    <item name="android:colorAccent">@color/theme_accent</item>
-    <item name="android:colorPrimary">@color/theme_primary</item>
-    <item name="android:colorPrimaryDark">@color/theme_primary_dark</item>
-  </style>
     <style name="Widget.Design.AppBarLayout" parent="Base.Widget.Design.AppBarLayout">
         <item name="android:stateListAnimator">@anim/design_appbar_state_list_animator</item>
     </style>
