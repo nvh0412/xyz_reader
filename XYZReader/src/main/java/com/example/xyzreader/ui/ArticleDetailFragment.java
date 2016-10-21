@@ -24,7 +24,6 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.ImageLoader;
 import com.example.xyzreader.R;
 import com.example.xyzreader.data.ArticleLoader;
-import com.squareup.picasso.Picasso;
 
 /**
  * A fragment representing a single Article detail screen. This fragment is
@@ -123,7 +122,6 @@ public class ArticleDetailFragment extends Fragment implements LoaderManager.Loa
           + mCursor.getString(ArticleLoader.Query.AUTHOR)
           + "</font>"));
       bodyView.setText(Html.fromHtml(mCursor.getString(ArticleLoader.Query.BODY)));
-      Picasso.with(getContext()).load(mCursor.getString(ArticleLoader.Query.PHOTO_URL)).into(mPhotoView);
       ImageLoaderHelper.getInstance(getActivity()).getImageLoader()
         .get(mCursor.getString(ArticleLoader.Query.PHOTO_URL), new ImageLoader.ImageListener() {
           @Override
@@ -131,6 +129,7 @@ public class ArticleDetailFragment extends Fragment implements LoaderManager.Loa
             Bitmap bitmap = imageContainer.getBitmap();
             if (bitmap != null) {
               Palette p = Palette.generate(bitmap, 12);
+              mPhotoView.setImageBitmap(imageContainer.getBitmap());
               mRootView.findViewById(R.id.meta_bar)
                 .setBackgroundColor(p.getDarkMutedColor(0xFF333333));
             }
