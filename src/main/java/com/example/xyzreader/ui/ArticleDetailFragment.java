@@ -17,7 +17,6 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.android.volley.VolleyError;
@@ -39,7 +38,7 @@ public class ArticleDetailFragment extends Fragment implements LoaderManager.Loa
   private long mItemId;
   private View mRootView;
 
-  private ImageView mPhotoView;
+  private ThreeTwoImageView mPhotoView;
   /**
    * Mandatory empty constructor for the fragment manager to instantiate the
    * fragment (e.g. upon screen orientation changes).
@@ -81,7 +80,7 @@ public class ArticleDetailFragment extends Fragment implements LoaderManager.Loa
   public View onCreateView(LayoutInflater inflater, ViewGroup container,
                            Bundle savedInstanceState) {
     mRootView = inflater.inflate(R.layout.fragment_article_detail, container, false);
-    mPhotoView = (ImageView) getActivity().findViewById(R.id.photo);
+    mPhotoView = (ThreeTwoImageView) getActivity().findViewById(R.id.photo);
 
     getActivity().findViewById(R.id.share_fab).setOnClickListener(new View.OnClickListener() {
       @Override
@@ -128,10 +127,9 @@ public class ArticleDetailFragment extends Fragment implements LoaderManager.Loa
           public void onResponse(ImageLoader.ImageContainer imageContainer, boolean b) {
             Bitmap bitmap = imageContainer.getBitmap();
             if (bitmap != null) {
-              Palette p = Palette.generate(bitmap, 12);
               mPhotoView.setImageBitmap(imageContainer.getBitmap());
               mRootView.findViewById(R.id.meta_bar)
-                .setBackgroundColor(p.getDarkMutedColor(0xFF333333));
+                .setBackgroundColor(Palette.generate(bitmap, 12).getDarkMutedColor(0xFF333333));
             }
           }
 
