@@ -17,6 +17,7 @@ import android.view.ViewGroup;
 import com.example.xyzreader.R;
 import com.example.xyzreader.data.ArticleLoader;
 import com.example.xyzreader.data.ItemsContract;
+import com.squareup.picasso.Picasso;
 
 ;
 
@@ -30,6 +31,7 @@ public class ArticleDetailActivity extends AppCompatActivity
   private long mStartId;
   private ViewPager mPager;
   private MyPagerAdapter mPagerAdapter;
+  private ThreeTwoImageView mPhotoView;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +42,9 @@ public class ArticleDetailActivity extends AppCompatActivity
           View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
     }
     setContentView(R.layout.activity_article_detail);
+
+    mPhotoView = (ThreeTwoImageView) findViewById(R.id.photo);
+
     final Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
     setSupportActionBar(toolbar);
     getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -60,6 +65,7 @@ public class ArticleDetailActivity extends AppCompatActivity
       public void onPageSelected(int position) {
         if (mCursor != null) {
           mCursor.moveToPosition(position);
+          Picasso.with(getApplicationContext()).load(mCursor.getString(ArticleLoader.Query.PHOTO_URL)).into(mPhotoView);
         }
       }
     });
@@ -80,7 +86,6 @@ public class ArticleDetailActivity extends AppCompatActivity
   public void onLoadFinished(Loader<Cursor> cursorLoader, Cursor cursor) {
     mCursor = cursor;
     mPagerAdapter.notifyDataSetChanged();
-
     // Select the start ID
     if (mStartId > 0) {
       mCursor.moveToFirst();

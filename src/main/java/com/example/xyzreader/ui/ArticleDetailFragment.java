@@ -33,12 +33,11 @@ public class ArticleDetailFragment extends Fragment implements LoaderManager.Loa
   private static final String TAG = "ArticleDetailFragment";
 
   public static final String ARG_ITEM_ID = "item_id";
+  private static final String LOG_TAG = ArticleDetailFragment.class.getSimpleName();
 
   private Cursor mCursor;
   private long mItemId;
   private View mRootView;
-
-  private ThreeTwoImageView mPhotoView;
   /**
    * Mandatory empty constructor for the fragment manager to instantiate the
    * fragment (e.g. upon screen orientation changes).
@@ -80,7 +79,6 @@ public class ArticleDetailFragment extends Fragment implements LoaderManager.Loa
   public View onCreateView(LayoutInflater inflater, ViewGroup container,
                            Bundle savedInstanceState) {
     mRootView = inflater.inflate(R.layout.fragment_article_detail, container, false);
-    mPhotoView = (ThreeTwoImageView) getActivity().findViewById(R.id.photo);
 
     getActivity().findViewById(R.id.share_fab).setOnClickListener(new View.OnClickListener() {
       @Override
@@ -92,6 +90,7 @@ public class ArticleDetailFragment extends Fragment implements LoaderManager.Loa
       }
     });
 
+    Log.d(LOG_TAG, "onCreateView bindViews");
     bindViews();
     return mRootView;
   }
@@ -127,7 +126,6 @@ public class ArticleDetailFragment extends Fragment implements LoaderManager.Loa
           public void onResponse(ImageLoader.ImageContainer imageContainer, boolean b) {
             Bitmap bitmap = imageContainer.getBitmap();
             if (bitmap != null) {
-              mPhotoView.setImageBitmap(imageContainer.getBitmap());
               mRootView.findViewById(R.id.meta_bar)
                 .setBackgroundColor(Palette.generate(bitmap, 12).getDarkMutedColor(0xFF333333));
             }
@@ -154,7 +152,7 @@ public class ArticleDetailFragment extends Fragment implements LoaderManager.Loa
   @Override
   public void onLoaderReset(Loader<Cursor> loader) {
     mCursor = null;
-    bindViews();
+    Log.d(LOG_TAG, "onLoaderReset bindViews");
   }
 
   @Override
@@ -173,6 +171,7 @@ public class ArticleDetailFragment extends Fragment implements LoaderManager.Loa
       mCursor = null;
     }
 
+    Log.d(LOG_TAG, "onLoadFinished bindViews");
     bindViews();
   }
 }
